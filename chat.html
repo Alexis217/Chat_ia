@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat de Preguntas y Respuestas</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <!-- Botón flotante -->
+    <div id="chatButton" onclick="toggleChat()">Chat</div>
+
+    <!-- Cuadro de chat -->
+    <div id="chatBox">
+        <div id="chatHeader">
+            <span>Chat de Preguntas y Respuestas</span>
+            <button onclick="toggleChat()">X</button>
+        </div>
+        <div id="chatContent">
+            <!-- Aquí se mostrarán los mensajes -->
+            ¿Hola en que puedo ayudarte hoy?
+        </div>
+        <div id="chatInput">
+            <input type="text" id="userInput" placeholder="Escribe tu pregunta...">
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
